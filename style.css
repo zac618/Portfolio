@@ -27,33 +27,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    position: absolute;
+    position: static;
     width: 426px;
     height: 78px;
     left: 136px;
     top: 343px;
     font-size: 52px;
     line-height: 78px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    position: absolute;
+    position: static;
     width: 148px;
     height: 48px;
     left: 136px;
     top: 289px;
     font-size: 32px;
     line-height: 48px;
+    margin-bottom: 10px;
 }
 
 p {
-    position: absolute;
+    position: static;
     width: 435px;
     height: 81px;
     left: 136px;
     top: 433px;
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 10px;
 }
 
 a,
@@ -83,11 +86,15 @@ a:hover {
     align-items: flex-start;
     padding: 12px 25px;
     
-    position: absolute;
+    position: static;
     width: 160px;
     height: 48px;
     left: 136px;
     top: 543px;
+}
+
+.hero-buttons {
+    display: flex;
 }
 
 .btn:hover {
@@ -97,7 +104,7 @@ a:hover {
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
-    
+    margin-right: 32px;
 }
 
 .btn.btn--primary:hover {
@@ -111,7 +118,7 @@ a:hover {
     padding: calc(var(--btn-p-tb) - var(--btn-border-size)) calc(var(--btn-p-lr) - var(--btn-border-size)) ;
     color: var(--white-color);
 
-    position: absolute;
+    position: static;
     width: 159px;
     height: 48px;
     left: 328px;
@@ -125,6 +132,7 @@ a:hover {
     order: 0;
     flex-grow: 0;
     margin: 0px 5px;
+    margin-right: 32px;
 }
 
 .btn.btn--secondary:hover {
@@ -153,30 +161,30 @@ a:hover {
 }
 
 .headshot-image {
-    position: absolute;
+    position: relative;
     width: 420px;
     height: 280px;
-    left: 756px;
-    top: 197px;
+    /* left: 756px;
+    top: 197px; */
 }
 
 .eclipse {
-    position: absolute;
+    position: relative;
     width: 400px;
     height: 400px;
-    left: 756px;
-    top: 197px;
+    /* left: 756px;
+    top: 197px; */
     border-radius: 50%;
     background-color: var(--light-color);
 }
 
 .rectangle {
-    position: absolute;
+    position: relative;
     width: 680px;
     height: 128px;
-    left: 756px;
-    top: 477px;
-    background-color: var(--dark-color);
+    /* left: 756px;
+    top: 477px; */
+    background-color: var(--tertiary-color);
 }
 
 .nav-list {
@@ -197,9 +205,17 @@ a:hover {
 
 .hero {
     display: flex;
+    padding: 250px;
 }
 
 .hero > div {
     width: 50%;
 }
 
+.left-hero {
+    position: relative;
+}
+
+.right-hero {
+    position: relative;
+}
