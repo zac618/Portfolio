@@ -24,40 +24,41 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+    margin-bottom: 10px;
+    width: auto;
 }
 
 h1 {
     position: static;
-    width: 426px;
     height: 78px;
-    left: 136px;
-    top: 343px;
     font-size: 52px;
     line-height: 78px;
-    margin-bottom: 10px;
 }
 
 h2 {
     position: static;
-    width: 148px;
     height: 48px;
-    left: 136px;
-    top: 289px;
     font-size: 32px;
     line-height: 48px;
-    margin-bottom: 10px;
 }
 
 p {
     position: static;
-    width: 435px;
     height: 81px;
-    left: 136px;
-    top: 433px;
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 10px;
+    width: auto;
 }
+
+/* This button section might not be needed */
+
+/* button {
+    position: static;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: auto;
+} */
 
 a,
 a:visited {
@@ -81,20 +82,17 @@ a:hover {
     line-height: 24px;
     font-weight: 600;
     
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 12px 25px;
     
     position: static;
-    width: 160px;
     height: 48px;
-    left: 136px;
-    top: 543px;
 }
 
 .hero-buttons {
     display: flex;
+    margin-top: 10px;
 }
 
 .btn:hover {
@@ -104,7 +102,7 @@ a:hover {
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
-    margin-right: 32px;
+    margin-right: 15px;
 }
 
 .btn.btn--primary:hover {
@@ -118,21 +116,15 @@ a:hover {
     padding: calc(var(--btn-p-tb) - var(--btn-border-size)) calc(var(--btn-p-lr) - var(--btn-border-size)) ;
     color: var(--white-color);
 
-    position: static;
-    width: 159px;
-    height: 48px;
-    left: 328px;
-    top: 543px;
-
     border: 2px solid var(--primary-color);
     box-sizing: border-box;
     border-radius: 8px;
 
-    flex: none;
+    /* flex: none;
     order: 0;
     flex-grow: 0;
     margin: 0px 5px;
-    margin-right: 32px;
+    margin-right: 15px; */
 }
 
 .btn.btn--secondary:hover {
@@ -161,30 +153,30 @@ a:hover {
 }
 
 .headshot-image {
-    position: relative;
+    position: absolute;
     width: 420px;
     height: 280px;
-    /* left: 756px;
-    top: 197px; */
+    left: 0px;
+    top: 0px;
 }
 
 .eclipse {
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 400px;
-    /* left: 756px;
-    top: 197px; */
+    left: 0px;
+    top: 0px;
     border-radius: 50%;
     background-color: var(--light-color);
 }
 
 .rectangle {
-    position: relative;
-    width: 680px;
+    position: absolute;
+    width: 400px;
     height: 128px;
-    /* left: 756px;
-    top: 477px; */
-    background-color: var(--tertiary-color);
+    left: 0px;
+    top: 280px;
+    background-color: var(--dark-color);
 }
 
 .nav-list {
@@ -205,17 +197,24 @@ a:hover {
 
 .hero {
     display: flex;
-    padding: 250px;
+    width: 100%;
+    margin-top: 200px;
+    /* padding: 250px; */
 }
 
-.hero > div {
+/* .hero > div {
     width: 50%;
-}
+} */
 
 .left-hero {
     position: relative;
+    left: 0px;
+    width: 50%;
 }
 
 .right-hero {
     position: relative;
+    left: 0px;
+    width: 50%;
+
 }
