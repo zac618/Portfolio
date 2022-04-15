@@ -229,6 +229,14 @@ a:hover {
     }
 }
 
+/* Targets Only Tablets */
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+
+    body {
+        padding: 0 100px;
+    }
+}
+
 /* Target Tablet and Below*/
 @media screen and (max-width: 1024px) {
     body {
@@ -255,11 +263,3 @@ a:hover {
     }
 }
 
-
-/* Targets Only Tablets */
-@media screen and (min-width: 376px) and (max-width: 1024px) {
-
-    body {
-        padding: 0 100px;
-    }
-}
