@@ -231,6 +231,10 @@ a:hover {
 
 /* Target Tablet and Below*/
 @media screen and (max-width: 1024px) {
+    body {
+        padding: 0 35px;
+    }
+
     .nav {
         justify-content: center;
     }
