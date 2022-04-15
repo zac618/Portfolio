@@ -17,7 +17,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     color: var(--white-color);
     padding: 0 136px;
 }
@@ -30,21 +30,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     position: static;
-    height: 78px;
     font-size: 52px;
     line-height: 78px;
 }
 
 h2 {
     position: static;
-    height: 48px;
     font-size: 32px;
     line-height: 48px;
 }
 
 p {
     position: static;
-    height: 81px;
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 10px;
@@ -69,7 +66,6 @@ a:visited {
 a:hover {
     color: var(--primary-color);
 }
-
 
 /* Classes below this line */
 
@@ -100,14 +96,14 @@ a:hover {
 }
 
 .btn.btn--primary {
-    color: var(--white-color);
-    background-color: var(--primary-color);
+    color: var(--dark-color);
+    background-color: var(--tertiary-color);
     margin-right: 15px;
 }
 
 .btn.btn--primary:hover {
-    background-color: var(--secondary-color);
-    color: var(--dark-color);
+    /* background-color: var(--dark-color); */
+    color: var(--light-color);
     }
 
 .btn.btn--secondary {
@@ -116,7 +112,7 @@ a:hover {
     padding: calc(var(--btn-p-tb) - var(--btn-border-size)) calc(var(--btn-p-lr) - var(--btn-border-size)) ;
     color: var(--white-color);
 
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--tertiary-color);
     box-sizing: border-box;
     border-radius: 8px;
 
@@ -128,7 +124,8 @@ a:hover {
 }
 
 .btn.btn--secondary:hover {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    color: var(--dark-color);
 }
 
 /* Nav Section */
@@ -152,31 +149,36 @@ a:hover {
     width: 80px;
 }
 
+.headshot-image-wrapper {
+    max-width: 400px;
+}
+
 .headshot-image {
-    position: absolute;
-    width: 420px;
-    height: 280px;
-    left: 0px;
-    top: 0px;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: calc(100 / (3 / 2) * 1%);
 }
 
-.eclipse {
+.headshot-image::after {
+    content: "";
     position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 0px;
-    top: 0px;
-    border-radius: 50%;
-    background-color: var(--light-color);
+    z-index: -1;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 75%;
+    height: 112.5%;
+    background-color: var(--tertiary-color);
+    border-radius: 100%;
 }
 
-.rectangle {
-    position: absolute;
-    width: 400px;
-    height: 128px;
-    left: 0px;
-    top: 280px;
-    background-color: var(--dark-color);
+.headshot-image__img {
+    z-index: 1;
+    display: block;
+    min-height: 1px;
+    width: 100%;
 }
 
 .nav-list {
@@ -208,13 +210,63 @@ a:hover {
 
 .left-hero {
     position: relative;
-    left: 0px;
     width: 50%;
 }
 
 .right-hero {
     position: relative;
-    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
+}
 
+/* Targets Phones */
+@media screen and (max-width: 375px) {
+
+    body {
+        padding: 0 25px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    
+    .left-hero,
+    .right-hero {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+}
+
+/* Target Tablet and Below*/
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    
+    .left-hero,
+    .right-hero {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Targets Only Tablets */
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+
+    body {
+        padding: 0 100px;
+    }
 }
