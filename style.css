@@ -224,20 +224,8 @@ a:hover {
 
 /* Targets Phones */
 @media screen and (max-width: 375px) {
-
     body {
         padding: 0 25px;
-    }
-
-    .hero {
-        flex-direction: column-reverse;
-        margin-top: 50px;
-    }
-    
-    .left-hero,
-    .right-hero {
-        width: 100%;
-        margin-bottom: 40px;
     }
 }
 
