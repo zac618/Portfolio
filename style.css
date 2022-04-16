@@ -236,30 +236,39 @@ a:hover {
     width: 50%;
 }
 
-/* Grid for descriptions */
+/* Grid for about me section */
+
+/* .about-me {
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 183px;
+} */
+
 
 .grid-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    gap: 22.5px;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    margin-bottom: 40px;
 }
 
-.grid-item-1,
-.grid-item-2,
-.grid-item-3 {
+.grid-item {
+    flex: 25%;
+    padding: 20px;
     border: solid 1px var(--primary-color);
+    /* flex-direction: column; */
+    margin-bottom: 40px;
+    margin: 5px;
     font-size: 17px;
     line-height: 28px;
     text-align: center;
-    height: 285px;
+    height: fit-content; 
 }
 
 .fa-people-group,
 .fa-code,
 .fa-graduation-cap {
-    padding-top: 20px;
+    padding: 5px;
 }
 
 .description {
@@ -286,7 +295,7 @@ a:hover {
 }
 
 /* Target Tablet and Below*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
     body {
         padding: 0 35px;
     }
@@ -305,16 +314,20 @@ a:hover {
     }
     
     .left-hero,
-    .right-hero,
-    .grid-item-1,
-    .grid-item-2,
-    .grid-item-3 {
+    .right-hero {
         width: 100%;
         margin-bottom: 40px;
+        flex: 100%;
     }
 
-    .grid-container {
+    .grid-item {
+        width: 100%;
+        flex: 100%;
+        padding: 30px;
+    }
+
+    /* .grid-container {
         width: 100%;
         margin-bottom: 40px;
-    }
+    } */
 }
