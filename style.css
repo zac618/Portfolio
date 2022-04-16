@@ -65,7 +65,7 @@ a:visited {
 }
 
 a:hover {
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 /* Classes below this line */
@@ -169,7 +169,7 @@ a:hover {
     width: 100%;
     /* Intrisic Ratio of headshot Image */
     padding-bottom: calc(100 / (1) * 1%);
-    overflow-y: clip;
+    overflow-y: clip; 
 }
 
 .headshot-image::after {
@@ -183,6 +183,10 @@ a:hover {
     height: 112.5%;
     background-color: var(--primary-color);
     border-radius: 100%;
+
+    /* might not be needed  */
+    overflow-y: clip;
+
 }
 
 .headshot-image__img {
@@ -200,7 +204,6 @@ a:hover {
 
 .nav-list-item {
     margin-right: 52px;
-
 }
 
 .nav-list-item:last-of-type {
@@ -246,16 +249,17 @@ a:hover {
 } */
 
 
-.grid-container {
+.about-grid-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 183px;
 }
 
-.grid-item {
+.about-grid-item {
     flex: 25%;
     padding: 20px;
-    border: solid 1px var(--primary-color);
+    border: solid 2px var(--primary-color);
     /* flex-direction: column; */
     margin-bottom: 40px;
     margin: 5px;
@@ -263,6 +267,10 @@ a:hover {
     line-height: 28px;
     text-align: center;
     height: fit-content; 
+}
+
+.about-grid-item:nth-of-type(2n) {
+    border: solid 2px white;
 }
 
 .fa-people-group,
@@ -275,6 +283,32 @@ a:hover {
     align-content: center;
     justify-content: center;
     margin-top: 15px;
+}
+
+/* Grid for Projects section */
+
+.projects-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 183px;
+}
+
+.projects-grid-item {
+    flex: 25%;
+    padding: 20px;
+    border: solid 2px white;
+    /* flex-direction: column; */
+    margin-bottom: 40px;
+    margin: 5px;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    height: fit-content; 
+}
+
+.projects-grid-item:nth-of-type(2n) {
+    border: solid 2px var(--primary-color);
 }
 
 /* Targets Phones */
@@ -320,7 +354,8 @@ a:hover {
         flex: 100%;
     }
 
-    .grid-item {
+    .about-grid-item,
+    .projects-grid-item {
         width: 100%;
         flex: 100%;
         padding: 30px;
