@@ -172,8 +172,8 @@ a:hover {
     /* FOUND OUT WHY CIRCLE WAS BROKEN ON MOBILE (stackoverflow answer below)
     https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers 
     */
-    margin-bottom: 80px;
-    position: relative;
+    /* margin-bottom: 80px;
+    position: relative; */
     /* The above 2 lines are currently fixing the broken circle on mobile */
 }
 
@@ -198,7 +198,7 @@ a:hover {
     border-radius: 100%;
 
     /* might not be needed  */
-    overflow-y: clip;
+    /* overflow-y: clip; */
 
 }
 
@@ -384,7 +384,7 @@ a:hover {
 
     .hero {
         flex-direction: column-reverse;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     
     .left-hero,
