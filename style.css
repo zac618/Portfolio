@@ -375,7 +375,7 @@ a:hover {
     }
 
     .nav {
-        justify-content: center;
+        justify-content: left;
     }
 
     .nav-list {
