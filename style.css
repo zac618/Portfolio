@@ -266,7 +266,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 183px;
+    margin-bottom: 300px;
 }
 
 .about-grid-item {
@@ -304,7 +304,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 183px;
+    margin-bottom: 300px;
 }
 
 .projects-grid-item {
@@ -330,7 +330,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 183px;
+    margin-bottom: 300px;
 }
 
 .socials {
@@ -390,7 +390,7 @@ a:hover {
     .left-hero,
     .right-hero {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         flex: 100%;
     }
 
