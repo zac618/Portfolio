@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2747b1b935.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+
 </head>
 <body>
 
@@ -36,8 +38,9 @@
             <h1>Zac Egleston</h1>
             <p>Currently, I am learning front-end web development.</p>
             <div class="hero-buttons">
-                <button class="btn btn--primary">About me</button>
-                <button class="btn btn--secondary">Projects</button>
+                <button id="about-button" class="btn btn--primary">About me</button>
+                <button id="projects-button" class="btn btn--secondary">Projects</button>
+                <button id="contact-button" class="btn btn--primary">Contact Me</button>
             </div>
         </div>
         <div class="right-hero">
@@ -51,7 +54,7 @@
     </section>
 
     <section class="about-me">
-            <h2>About me:</h2>
+            <h2 id="about-me-heading">About me:</h2>
             <div class="about-grid-container">
                 <div class="about-grid-item">
                     <i class="fa-solid fa-people-group fa-4x"></i>
@@ -69,14 +72,15 @@
     </section>
 
     <section class="projects">
-        <h2>Projects:</h2>
-        <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
+        <h2 id="project-heading">Projects:</h2>
+        <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world
+            projects</p>
         <div class="projects-grid-container">
             <div class="projects-grid-item">
                 <i class="fa-solid fa-people-group fa-4x"></i>
                 <p class="description">This will be an example of a project I have done</p>
                 <p class="description">It will include a button for the live site & a button for the GitHub repo</p>
-
+    
             </div>
             <div class="projects-grid-item">
                 <i class="fa-solid fa-code fa-4x"></i>
@@ -88,7 +92,23 @@
                 <p class="description">This will be an example of a project I have done</p>
                 <p class="description">It will include a button for the live site & a button for the GitHub repo</p>
             </div>
-          </div>
+        </div>
+    </section>
+
+    <section class="contact-me">
+        <div class="socials-container">
+            <h2 id="connect-heading" >Connect With Me</h2>
+            <ul class="socials">
+                <li class="social-item"><a href="#">Twitter Icon will be here</a></li>
+                <li class="social-item"><a href="#">GitHub Icon will be here</a></li>
+                <li class="social-item"><a href="#">Discord Icon will be here</a></li>
+            </ul>
+        </div>
+        <div class="contact-form-container">
+            <h2 id="contact-form-heading">Contact me directly!</h2>
+            <p>This will be a form where someone can send a message that emails me</p>
+            <!-- <input id="name-input"> -->
+        </div>
     </section>
 
 </body>

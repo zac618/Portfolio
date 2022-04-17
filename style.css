@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }  
+
 :root {
     /* --h1-color: green; */
     /* Colors */
@@ -112,6 +116,7 @@ a:hover {
     background-color: transparent;
     padding: calc(var(--btn-p-tb) - var(--btn-border-size)) calc(var(--btn-p-lr) - var(--btn-border-size)) ;
     color: var(--white-color);
+    margin-right: 15px;
 
     border: 2px solid var(--primary-color);
     box-sizing: border-box;
@@ -144,6 +149,7 @@ a:hover {
     line-height: 42px;
 } */
 
+/* Creating a circle for logo on top left of site */
 .creating-circle {
     background: white;
     position: absolute;
@@ -159,8 +165,13 @@ a:hover {
     width: 80px;
 }
 
+/* headshot section */
 .headshot-image-wrapper {
     max-width: 100%;
+    overflow-y: clip; 
+    /* FOUND OUT WHY CIRCLE WAS BROKEN ON MOBILE (stackoverflow answer below)
+    https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers 
+    */
 }
 
 .headshot-image {
@@ -169,7 +180,6 @@ a:hover {
     width: 100%;
     /* Intrisic Ratio of headshot Image */
     padding-bottom: calc(100 / (1) * 1%);
-    overflow-y: clip; 
 }
 
 .headshot-image::after {
@@ -309,6 +319,32 @@ a:hover {
 
 .projects-grid-item:nth-of-type(2n) {
     border: solid 2px var(--primary-color);
+}
+
+/* Contact Section */
+
+.contact-me {
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 183px;
+}
+
+.socials-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+.contact-form-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-direction: column;
 }
 
 /* Targets Phones */
