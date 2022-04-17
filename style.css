@@ -172,6 +172,7 @@ a:hover {
     /* FOUND OUT WHY CIRCLE WAS BROKEN ON MOBILE (stackoverflow answer below)
     https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers 
     */
+    margin-bottom: 183px;
 }
 
 .headshot-image {
@@ -323,27 +324,28 @@ a:hover {
 
 /* Contact Section */
 
-.contact-me {
+.contact-me-container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    margin-top: 200px;
     margin-bottom: 183px;
 }
 
-.socials-container {
+.socials {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 20%;
+    flex: 20%;
+    margin-bottom: 40px;
 }
 
-.contact-form-container {
+.contact-form {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 80%;
+    /* justify-content: center; */
+    flex: 80%;
     flex-direction: column;
 }
 
@@ -391,7 +393,9 @@ a:hover {
     }
 
     .about-grid-item,
-    .projects-grid-item {
+    .projects-grid-item, 
+    .socials-container,
+    .contact-form-container {
         width: 100%;
         flex: 100%;
         padding: 30px;
