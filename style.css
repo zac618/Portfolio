@@ -370,7 +370,8 @@ a:hover {
 
 /* Target Tablet and Below*/
 @media screen and (max-width: 1020px) {
-    body {
+    body,
+    html {
         padding: 0 35px;
     }
 
