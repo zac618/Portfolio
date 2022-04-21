@@ -181,7 +181,7 @@ a:hover {
     position: relative;
     height: 0;
     width: 100%;
-    /* Intrisic Ratio of headshot Image */
+    /* Intrinsic Ratio of headshot Image */
     padding-bottom: calc(100 / (1) * 1%);
 }
 
@@ -198,7 +198,7 @@ a:hover {
     border-radius: 100%;
 
     /* might not be needed  */
-    /* overflow-y: clip; */
+    overflow-y: clip;
 
 }
 
