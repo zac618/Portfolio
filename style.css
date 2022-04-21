@@ -398,7 +398,7 @@ a:hover {
     .headshot-image-wrapper {
         /* max-width: 100%; */
         overflow-y: clip; 
-    
+    }
 
     .about-grid-item,
     .projects-grid-item, 
