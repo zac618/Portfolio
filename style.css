@@ -395,7 +395,8 @@ a:hover {
         flex: 100%;
     }
 
-    .headshot-image-wrapper {
+    .headshot-image-wrapper, 
+    .headshot-image::after {
         /* max-width: 100%; */
         overflow-y: clip; 
     }
