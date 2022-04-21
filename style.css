@@ -395,6 +395,11 @@ a:hover {
         flex: 100%;
     }
 
+    .headshot-image-wrapper {
+        /* max-width: 100%; */
+        overflow-y: clip; 
+    
+
     .about-grid-item,
     .projects-grid-item, 
     .socials-container,
