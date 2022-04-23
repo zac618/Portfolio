@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
   }  
@@ -340,6 +345,15 @@ a:hover {
     justify-content: center;
     flex: 20%;
     margin-bottom: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.social-item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 .contact-form {
@@ -370,8 +384,7 @@ a:hover {
 
 /* Target Tablet and Below*/
 @media screen and (max-width: 1020px) {
-    body,
-    html {
+    body {
         padding: 0 35px;
     }
 

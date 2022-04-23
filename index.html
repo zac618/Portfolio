@@ -40,7 +40,7 @@
             <div class="hero-buttons">
                 <button id="about-button" class="btn btn--primary">About</button>
                 <button id="projects-button" class="btn btn--secondary">Projects</button>
-                <button id="contact-button" class="btn btn--primary">Contact</button>
+                <button id="contact-button" class="btn btn--secondary">Contact</button>
             </div>
         </div>
         <div class="right-hero">
@@ -100,15 +100,32 @@
             <div class="socials">
                 <h2 id="connect-heading" >Connect With Me</h2>
                 <ul class="socials">
-                    <li class="social-item"><a href="#">Twitter Icon will be here</a></li>
-                    <li class="social-item"><a href="#">GitHub Icon will be here</a></li>
-                    <li class="social-item"><a href="#">Discord Icon will be here</a></li>
+                    <li class="social-item"><a href="https://twitter.com/ZacTheNewGuy"> <img src="Resources\icons8-twitter-50.png"></a></li>
+                    <li class="social-item"><a href="https://github.com/zac618"> <img src="Resources\icons8-github-50.png"></a></li>
+                    <li class="social-item"><a href="https://discord.gg/uDEFPrK"> <img src="Resources\icons8-discord-50.png"></a></li>
+                    
                 </ul>
             </div>
             <div class="contact-form">
                 <h2 id="contact-form-heading">Contact me directly!</h2>
-                <p>This will be a form where someone can send a message that emails me</p>
-                <!-- <input id="name-input"> -->
+                
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="email" id="mail" name="user_name">
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_email">
+                          </li>
+                          <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                          </li>
+                         </ul>
+                    </ul>
+                </form>
             </div>
         </div>
     </section>
