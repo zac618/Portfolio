@@ -58,6 +58,10 @@ p {
     width: auto;
 }
 
+form {
+    width: 50%;
+}
+
 /* This button section might not be needed */
 
 /* button {
@@ -426,6 +430,10 @@ a:hover {
         width: 100%;
         flex: 100%;
         padding: 30px;
+    }
+
+    form {
+        width: 100%;
     }
 
     /* .grid-container {
