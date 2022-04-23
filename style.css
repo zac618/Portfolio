@@ -239,7 +239,7 @@ a:hover {
     display: flex;
     width: 100%;
     margin-top: 200px;
-    margin-bottom: 300px;
+    margin-bottom: 400px;
 }
 
 /* .hero > div {
@@ -264,19 +264,18 @@ a:hover {
 
 /* Grid for about me section */
 
-/* .about-me {
+.about-me {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    margin-top: 200px;
-    margin-bottom: 183px;
-} */
+    margin-bottom: 300px;
+}
 
 
 .about-grid-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 300px;
 }
 
 .about-grid-item {
@@ -308,13 +307,18 @@ a:hover {
     margin-top: 15px;
 }
 
-/* Grid for Projects section */
+/*Projects section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 300px;
+}
 
 .projects-grid-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 300px;
 }
 
 .projects-grid-item {
