@@ -288,13 +288,14 @@ a:hover {
     font-size: 17px;
     line-height: 28px;
     text-align: center;
-    height: fit-content; 
 }
 
 .about-grid-item:nth-of-type(2n) {
     border: solid 2px white;
 }
 
+.fa-laptop-code,
+.fa-people-roof,
 .fa-people-group,
 .fa-code,
 .fa-graduation-cap {
