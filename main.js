@@ -9,9 +9,9 @@ aboutBtn.addEventListener("click", function(){
     seeAbout.scrollIntoView();
 });
 
-// projectsBtn.addEventListener("click", function(){
-//     seeProjects.scrollIntoView();
-// })
+projectsBtn.addEventListener("click", function(){
+    seeProjects.scrollIntoView();
+})
 
 contactBtn.addEventListener("click", function() {
     seeContact.scrollIntoView();

@@ -262,8 +262,7 @@ a:hover {
     width: 50%;
 }
 
-/* Grid for about me section */
-
+/* About me section */
 .about-me {
     display: flex;
     flex-wrap: wrap;
@@ -324,6 +323,8 @@ a:hover {
 
 .projects-grid-item {
     flex: 25%;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border: solid 2px white;
     /* flex-direction: column; */
@@ -332,7 +333,6 @@ a:hover {
     font-size: 17px;
     line-height: 28px;
     text-align: center;
-    height: fit-content; 
 }
 
 .projects-grid-item:nth-of-type(2n) {
